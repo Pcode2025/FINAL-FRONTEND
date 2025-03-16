@@ -1,5 +1,3 @@
-// pages/blogs/[slug].js
-
 import { SlCalender } from "react-icons/sl";
 import { CiRead } from "react-icons/ci";
 import { RiFacebookFill } from "react-icons/ri";
@@ -304,7 +302,7 @@ const BlogPage = () => {
 
 
     // Replace 'example.com' with your actual domain
-    const blogUrl = `https://localhost:3000/blogs/${slug}`;
+    const blogUrl = `/blogs/${slug}`;
 
 
     const handleCopyUrl = (url) => {
@@ -345,27 +343,27 @@ const BlogPage = () => {
 
                                     <div className="shareblogslug">
                                         {/* Copy URL button */}
-                                        <div title="Copy URL" onClick={() => handleCopyUrl(blogUrl)} style={{ cursor: 'pointer' }}>
+                                        <div title="Copy URL" onClick={() => handleCopyUrl('https://www.mydesignnexus.in' + blogUrl)} style={{ cursor: 'pointer' }}>
                                             <BsCopy /> <span>{copied ? 'Copied!' : ''}</span>
                                         </div>
 
                                         {/* Facebook share button */}
-                                        <a href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(blogUrl)}`} target="_blank" rel="noopener noreferrer">
+                                        <a href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent('https://www.mydesignnexus.in' + blogUrl)}`} target="_blank" rel="noopener noreferrer">
                                             <RiFacebookFill />
                                         </a>
 
                                         {/* Twitter share button */}
-                                        <a href={`https://twitter.com/intent/tweet?text=${encodeURIComponent('Check out this blog post: ' + blogUrl)}`} target="_blank" rel="noopener noreferrer">
+                                        <a href={`https://twitter.com/intent/tweet?text=${encodeURIComponent('https://www.mydesignnexus.in' + blogUrl)}`} target="_blank" rel="noopener noreferrer">
                                             <FaTwitter />
                                         </a>
 
                                         {/* WhatsApp share button */}
-                                        <a href={`whatsapp://send?text=Check out this blog post: ${encodeURIComponent(blogUrl)}`} target="_blank" rel="noopener noreferrer">
+                                        <a href={`whatsapp://send?text=Hey everyone, please check out my blog and let me know what you think! : ${encodeURIComponent('https://www.mydesignnexus.in' + blogUrl)}`} target="_blank" rel="noopener noreferrer">
                                             <RiWhatsappFill />
                                         </a>
 
                                         {/* LinkedIn share button */}
-                                        <a href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(blogUrl)}`} target="_blank" rel="noopener noreferrer">
+                                        <a href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent('https://www.mydesignnexus.in' + blogUrl)}`} target="_blank" rel="noopener noreferrer">
                                             <BiLogoLinkedin />
                                         </a>
                                     </div>
