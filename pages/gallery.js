@@ -46,7 +46,7 @@ export default function gallery() {
                         {alldata.map((Photo) => {
                             return <div className="image-item">
                                 <img src={Photo.images[0]} alt="" />
-                                <div style={{backgroundColor:  '#9500ff', textAlign: 'center', height: 'auto', color: 'white', borderRadius:'10px'}}>
+                                <div style={{backgroundColor:  '#9500ff', textAlign: 'center', height: 'auto', color: 'white', borderRadius:'5px', fontSize: "7px"}}>
                                     <h2>{Photo.title}</h2>
                                     <p>By Rakshith</p>
                                 </div>
