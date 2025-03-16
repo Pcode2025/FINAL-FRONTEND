@@ -1,5 +1,3 @@
-// components/Preloader.js
-
 import { useEffect } from "react";
 import gsap from "gsap";
 
@@ -46,15 +44,7 @@ const Preloader = ({ isLoading }) => {
 
     return (
         <>
-            <div >
-                <div className="preloader-heading">
-                    <span className="load-text">Loading...</span>
-                    <span className="cont">Please wait</span>
-                </div>
-                <svg id="preloaderSvg" viewBox="0 0 1000 500">
-                    <path d="M0 2S175 1 500 1s500 1 500 1V0H0Z" />
-                </svg>
-            </div>
+            
             <div className={`preloader ${isLoading ? '' : 'hidden'}`}>
                 <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
                     <path id="preloaderSvg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
