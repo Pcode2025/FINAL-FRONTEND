@@ -188,10 +188,31 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Rakshith - Personal Portfolio</title>
         <meta name="description" content="vbmcoder - Personal Portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="theme-color" content="#000000" />
+        <title>My Design Nexus - Personal Portfolio, AI Apps, Professional Services, Blogs & Shop</title>
+        <meta name="description" content="Explore AI-powered web apps, professional business services, blogs, shop, gallery, and projects at My Design Nexus. Elevate your business with cutting-edge digital solutions." />
+        <meta name="keywords" content="AI Apps, Web Design, Business Solutions, Web Development, Blogging, Professional Services, Shop, Gallery, Projects" />
+        <meta name="author" content="My Design Nexus" />
+        <meta name="robots" content="index, follow" />
+
+        {/* Canonical UR */}
+        <link rel="canonical" href="https://www.mydesignnexus.in" />
+
+        {/* Open Graph Meta Tags (For Social Media) */}
+        <meta property="og:title" content="My Design Nexus - AI Apps, Professional Services & More" />
+        <meta property="og:description" content="Discover AI-powered web solutions, blogs, shop, and business services at My Design Nexus." />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Card (For Twitter Sharing) */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="My Design Nexus - AI Apps, Professional Services & More" />
+        <meta name="twitter:description" content="AI-powered web apps, blogs, shop, gallery, and projects to enhance your business." />
       </Head>
 
       {/* hero section */}
@@ -367,8 +388,8 @@ export default function Home() {
                   Linux Basics, Networking Essentials, Databases, Web Development with Flask, Cloud Computing, and Java Basics.
                   During my internship, I also worked on real-world assignments and web projects, applying my skills to practical
                   scenarios and building impactful solutions.</p><br />
-                
-                
+
+
               </div>
 
               <div className="exper_card" data-aos="fade-up">
@@ -376,11 +397,11 @@ export default function Home() {
                 <h3>Wadhwani Foundation -<a href="https://wadhwanifoundation.org/contact-us/"><u>Bengaluru</u></a><br /><p style={{ margin: '2px' }}> 1:15PM - 2:15 PM (Fri-Sat)</p></h3>
                 <p style={{ fontSize: '2.0rem' }}>Internship (Online)</p><br />
                 <p style={{ fontSize: '1.2rem' }}>
-                Successfully completed the Life Skills (Jeevan Kaushal) 2.0 program at Wadhwani Foundation, gaining expertise in 
-                communication, leadership, digital literacy, entrepreneurial skills, ethics, and innovative thinking. 
-                This program enhanced my professional and managerial skills, equipping me with essential employability competencies
-                 for career growth.</p><br />
-                
+                  Successfully completed the Life Skills (Jeevan Kaushal) 2.0 program at Wadhwani Foundation, gaining expertise in
+                  communication, leadership, digital literacy, entrepreneurial skills, ethics, and innovative thinking.
+                  This program enhanced my professional and managerial skills, equipping me with essential employability competencies
+                  for career growth.</p><br />
+
               </div>
             </div>
           </div>
@@ -426,7 +447,7 @@ export default function Home() {
             <p data-aos="fade-up">We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</p>
           </div>
           <div className="myskils_cards">
-          <div className="mys_card" data-aos="fade-right">
+            <div className="mys_card" data-aos="fade-right">
               <div className="mys_inner">
                 <img src="/img/sui.svg" alt="" />
                 <h3>95%</h3>
@@ -699,7 +720,7 @@ export default function Home() {
 
 
 
-      
+
       {/* Testimonials Section */}
       <section className="testimonials">
         <div className="container">
@@ -712,8 +733,8 @@ export default function Home() {
             <div className="testimonial_cards">
               <div className="testimonial_card" data-aos="fade-up">
                 <div className="testimonial_content">
-                  <p>"Rakshith helped us transform our outdated website into a modern, user-friendly platform. 
-                    His attention to detail and technical expertise were invaluable. 
+                  <p>"Rakshith helped us transform our outdated website into a modern, user-friendly platform.
+                    His attention to detail and technical expertise were invaluable.
                     Our conversion rates have increased by 35% since the redesign!"</p>
                 </div>
                 <div className="testimonial_author">
