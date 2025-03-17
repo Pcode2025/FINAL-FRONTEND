@@ -85,8 +85,8 @@ export default function contact() {
                         <p> We value your questions and feedback – and we’re always ready to help your business succeed!</p>
                         <div className="leftsociinfo" >
                             <ul>
-                                <li><FaPhoneVolume /> <span style={{ fontSize: '1.7rem' }} >Phone: <a href="tel:+919353241308" rel="nofollow" target="_blank">+91 9353-241-308</a></span></li>
-                                <li><MdAttachEmail /> <span style={{ fontSize: '1.7rem' }} >Email: <a href="/" rel="nofollow" target="_blank">support@mydesignnexus.in</a></span></li>
+                                <li><FaPhoneVolume /> <span>Phone: <a href="tel:+919353241308" rel="nofollow" target="_blank">+91 9353-241-308</a></span></li>
+                                <li><MdAttachEmail /> <span>Email: <a href="/" rel="nofollow" target="_blank">support@mydesignnexus.in</a></span></li>
                                 <li><GrLinkedin /> <span>Linkedin: <a href="https://www.linkedin.com/in/rakshithgowdaofficial?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" rel="nofollow" target="_blank">Rakshith Gowda</a></span></li>
                                 <li><AiFillInstagram /> <span>Twitter: <a href="https://www.instagram.com/my.designnexus?igsh=Z2d5N2Qza3IzaWx1" rel="nofollow" target="_blank">@my.designnexus</a></span></li>
                             </ul>
