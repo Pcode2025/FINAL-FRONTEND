@@ -65,7 +65,25 @@ export default function blogs() {
 
     return <>
         <Head>
-            <title>Blogs</title>
+            <title>Blogs | My Design Nexus</title>
+
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <meta name="description" content="Explore blogs on User Interface, UX, Figma, Gen AI, Prompt Engineering, HTML5, CSS3, JavaScript, Aptitude, Soft Skills, Resume Building, Interviews, Job Hunting, and AI Tools." />
+            <meta name="robots" content="index, follow" />
+
+            {/*  Open Graph Meta Tags (For Social Sharing) */}
+            <meta property="og:title" content="Blogs | My Design Nexus" />
+            <meta property="og:description" content="Read the latest blogs on AI, Web Development, and Business Solutions." />
+            <meta property="og:image" content="https://www.mydesignnexus.in/blog-cover.jpg" />
+            <meta property="og:url" content="https://www.mydesignnexus.in/blog" />
+            <meta property="og:type" content="website" />
+
+            {/*   Twitter Card Meta Tags */}
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:title" content="Blogs | My Design Nexus" />
+            <meta name="twitter:description" content="Explore trending blogs on UI, UX, AI, Web Development, and more." />
+            <meta name="twitter:image" content="https://www.mydesignnexus.in/blog-cover.jpg" />
         </Head>
         <div className="blogpage">
             <section className="tophero">
