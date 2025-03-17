@@ -10,6 +10,70 @@ export default function gallery() {
 
     return <>
 
+        <Head>
+            <title>AI Photos Gallery | Rakshith's AI Generated Images</title>
+            
+            <meta name="description" content="Experience the beauty of AI-generated images, crafted with cutting-edge technology. Discover unique, high-quality visuals perfect for creativity and inspiration." />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <meta charSet="UTF-8" />
+            <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="keywords" content="AI photos, AI generated images, artificial intelligence art, digital art, Rakshith" />
+            <meta name="author" content="Rakshith" />
+
+            {/* Open Graph / Facebook */}
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content="https://www.mydesignnexus.in/gallery" />
+            <meta property="og:title" content="AI Photos Gallery | Rakshith's AI Generated Images" />
+            <meta property="og:description" content="Experience the beauty of AI-generated images, crafted with cutting-edge technology. Discover unique, high-quality visuals perfect for creativity and inspiration." />
+            <meta property="og:image" content="https://www.mydesignnexus.in/img/logo.png" />
+
+            {/* Twitter */}
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:url" content="https://www.mydesignnexus.in/gallery" />
+            <meta name="twitter:title" content="AI Photos Gallery | Rakshith's AI Generated Images" />
+            <meta name="twitter:description" content="Experience the beauty of AI-generated images, crafted with cutting-edge technology. Discover unique, high-quality visuals perfect for creativity and inspiration." />
+            <meta name="twitter:image" content="https://www.mydesignnexus.in/img/logo.png" />
+
+            {/* Favicon */}
+            <link rel="icon" href="/favicon.ico" />
+            <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+            <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+            <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+            <link rel="manifest" href="/site.webmanifest" />
+
+            {/* Fonts */}
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+            {/* AOS Animation library */}
+            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+            {/* Schema.org structured data for better SEO */}
+            <script type="application/ld+json">
+                {`
+            {
+                "@context": "https://schema.org",
+                "@type": "CollectionPage",
+                "name": "AI Photos Gallery",
+                "description": "Experience the beauty of AI-generated images, crafted with cutting-edge technology.",
+                "creator": {
+                    "@type": "Person",
+                    "name": "Rakshith"
+                },
+                "about": {
+                    "@type": "Thing",
+                    "name": "AI-generated art"
+                },
+                "url": "https://www.mydesignnexus.in/gallery"
+            }
+        `}
+            </script>
+
+            {/* Preload critical images */}
+            <link rel="preload" as="image" href="https://wpthemebooster.com/demo/themeforest/html/kimono/assets/img/projects/3/1.jpg" />
+        </Head>
+
         <div className="container">
             <div className="toptitle">
                 <div className="toptitlecont flex">
