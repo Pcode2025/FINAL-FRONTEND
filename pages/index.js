@@ -14,8 +14,6 @@ import { FaCalendarDays } from "react-icons/fa6";
 import Spinner from "@/components/Spinner";
 import Typed from 'typed.js';
 
-
-
 export default function Home() {
 
 
@@ -29,9 +27,6 @@ export default function Home() {
   const handleMouseOut = () => {
     setActiveIndex(0); // Set the first item as active when mouse leaves
   };
-
-
-
 
   // services data
   const services = [
@@ -131,7 +126,6 @@ export default function Home() {
   const handleCategoryChange = (category) => {
     setSelectedCategory(category);
   };
-
 
 
   // Function to format the date as "20 May 2024 14:11 pm"
@@ -309,8 +303,6 @@ export default function Home() {
         </div>
       </section>
 
-
-
       {/* Projects */}
       <section className="projects">
         <div className="container">
@@ -435,9 +427,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-
-
 
       {/* My Skills */}
       <section className="myskills">
@@ -631,9 +620,6 @@ export default function Home() {
 
       </section>
 
-
-
-
       {/* Experience study */}
       <section className="exstudy">
         <div className="myskills_title">
@@ -673,8 +659,6 @@ export default function Home() {
             </div>
           </div>
 
-
-
           <div className="education">
 
             <div >
@@ -713,13 +697,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-
-
-
-
-
-
 
       {/* Testimonials Section */}
       <section className="testimonials">
@@ -796,7 +773,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
     </>
   );
 }
