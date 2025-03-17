@@ -704,7 +704,7 @@ export default function Home() {
       <section className="testimonials">
         <div className="container">
           <div className="myskills_title">
-            <h2 data-aos="fade-up">FAQ</h2>
+            <h2 data-aos="fade-up">Testimonials</h2>
             <p data-aos="fade-up">
               Don't just take my word for it. Here's what my clients have to say about working with me.</p>
           </div>
