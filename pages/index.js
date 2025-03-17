@@ -14,6 +14,8 @@ import { FaCalendarDays } from "react-icons/fa6";
 import Spinner from "@/components/Spinner";
 import Typed from 'typed.js';
 
+
+
 export default function Home() {
 
 
@@ -27,6 +29,9 @@ export default function Home() {
   const handleMouseOut = () => {
     setActiveIndex(0); // Set the first item as active when mouse leaves
   };
+
+
+
 
   // services data
   const services = [
@@ -128,6 +133,7 @@ export default function Home() {
   };
 
 
+
   // Function to format the date as "20 May 2024 14:11 pm"
   const formatDate = (date) => {
     // Check if date is valid
@@ -182,31 +188,268 @@ export default function Home() {
   return (
     <>
       <Head>
-        <meta name="description" content="vbmcoder - Personal Portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="shortcut icon" type="image/png" href="/favicon.png" />
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <meta name="theme-color" content="#000000" />
+
+        {/* Basic Meta Tags */}
+        <meta charSet="UTF-8" />
+        <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="theme-color" content="#19195c" />
+
+        {/* Primary SEO Tags */}
         <title>My Design Nexus - Personal Portfolio, AI Apps, Professional Services, Blogs & Shop</title>
         <meta name="description" content="Explore AI-powered web apps, professional business services, blogs, shop, gallery, and projects at My Design Nexus. Elevate your business with cutting-edge digital solutions." />
-        <meta name="keywords" content="AI Apps, Web Design, Business Solutions, Web Development, Blogging, Professional Services, Shop, Gallery, Projects" />
-        <meta name="author" content="My Design Nexus" />
-        <meta name="robots" content="index, follow" />
+        <meta name="keywords" content="AI Apps, Web Design, Business Solutions, Web Development, Blogging, Professional Services, Shop, Gallery, Projects, UI/UX Design, Frontend Development, Backend Development, Content Creation, Work Automation, Quality Assurance" />
+        <meta name="author" content="Rakshith Gowda - My Design Nexus" />
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
-        {/* Canonical UR */}
+        {/* Canonical URL */}
         <link rel="canonical" href="https://www.mydesignnexus.in" />
 
         {/* Open Graph Meta Tags (For Social Media) */}
         <meta property="og:title" content="My Design Nexus - AI Apps, Professional Services & More" />
-        <meta property="og:description" content="Discover AI-powered web solutions, blogs, shop, and business services at My Design Nexus." />
+        <meta property="og:description" content="Discover AI-powered web solutions, blogs, shop, and business services at My Design Nexus. Expert in UI/UX design, web development, and digital marketing." />
+        <meta property="og:image" content="https://www.mydesignnexus.in/img/logo.png" />
+        <meta property="og:image:alt" content="My Design Nexus Logo" />
+        <meta property="og:url" content="https://www.mydesignnexus.in" />
         <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="My Design Nexus" />
+        <meta property="og:locale" content="en_US" />
 
         {/* Twitter Card (For Twitter Sharing) */}
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@mydesignnexus" />
+        <meta name="twitter:creator" content="@rakshithgowda" />
         <meta name="twitter:title" content="My Design Nexus - AI Apps, Professional Services & More" />
         <meta name="twitter:description" content="AI-powered web apps, blogs, shop, gallery, and projects to enhance your business." />
+        <meta name="twitter:image" content="https://www.mydesignnexus.in/img/logo.png" />
+        <meta name="twitter:image:alt" content="My Design Nexus Portfolio Showcase" />
+
+        {/* Facebook Open Graph Additional Tags */}
+        <meta property="fb:app_id" content="your-fb-app-id" />
+        <meta property="article:publisher" content="https://www.facebook.com/mydesignnexus" />
+
+        {/* LinkedIn Specific Tags */}
+        <meta property="linkedin:owner" content="mydesignnexus" />
+        <meta property="linkedin:title" content="My Design Nexus - Professional Portfolio & Services" />
+        <meta property="linkedin:description" content="Full-stack developer and UX designer delivering exceptional digital solutions." />
+
+        {/* Pinterest Specific Tags */}
+        <meta name="pinterest-rich-pin" content="true" />
+        <meta name="pinterest:title" content="My Design Nexus - Creative Digital Solutions" />
+        <meta name="pinterest:description" content="Explore creative UI/UX designs and web solutions for your business needs." />
+
+        {/* Mobile App Tags */}
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="apple-mobile-web-app-title" content="My Design Nexus" />
+        <link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+
+        {/* Geo Tags */}
+        <meta name="geo.region" content="IN-KA" />
+        <meta name="geo.placename" content="Bangalore" />
+        <meta name="geo.position" content="12.971599;77.594563" />
+        <meta name="ICBM" content="12.971599, 77.594563" />
+
+        {/* JSON-LD Schema Markup */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "name": "My Design Nexus",
+            "image": "https://www.mydesignnexus.in/img/logo.png",
+            "url": "https://www.mydesignnexus.in",
+            "description": "Premium web design, UI/UX, and digital marketing services with AI-powered solutions.",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Bangalore",
+              "addressRegion": "Karnataka",
+              "postalCode": "560001",
+              "addressCountry": "IN"
+            },
+            "telephone": "+91-9876543210",
+            "email": "contact@mydesignnexus.in",
+            "priceRange": "$$",
+            "openingHours": "Mo-Fr 09:00-17:00",
+            "sameAs": [
+              "https://www.facebook.com/mydesignnexus",
+              "https://www.twitter.com/mydesignnexus",
+              "https://www.linkedin.com/in/rakshithgowdaofficial",
+              "https://www.instagram.com/my.designnexus",
+              "https://dribbble.com/Raks025",
+              "https://www.pinterest.com/rakshithgowdamsofficial2025/",
+              "https://github.com/rakshithgowda"
+            ],
+            "founder": {
+              "@type": "Person",
+              "name": "Rakshith Gowda",
+              "jobTitle": "UI Designer & Full Stack Developer",
+              "image": "https://www.mydesignnexus.in/img/me.jpg",
+              "sameAs": "https://www.linkedin.com/in/rakshithgowdaofficial"
+            },
+            "makesOffer": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "UI/UX Design",
+                  "description": "Modern, visually appealing, and user-friendly interfaces"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Web Development",
+                  "description": "Full-stack web development with React, Node.js, and MongoDB"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "AI Applications",
+                  "description": "AI-powered web applications and tools"
+                }
+              }
+            ]
+          })}
+        </script>
+
+        {/* Person Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Rakshith Gowda",
+            "url": "https://www.mydesignnexus.in",
+            "image": "https://www.mydesignnexus.in/img/me.jpg",
+            "jobTitle": "UI Designer & Full Stack Developer",
+            "worksFor": {
+              "@type": "Organization",
+              "name": "My Design Nexus"
+            },
+            "sameAs": [
+              "https://www.linkedin.com/in/rakshithgowdaofficial",
+              "https://www.instagram.com/my.designnexus",
+              "https://dribbble.com/Raks025",
+              "https://www.pinterest.com/rakshithgowdamsofficial2025/",
+              "https://github.com/rakshithgowda"
+            ],
+            "alumniOf": [
+              {
+                "@type": "CollegeOrUniversity",
+                "name": "BAHUBALI COLLEGE OF ENGINEERING",
+                "sameAs": "https://www.bahubali.edu.in"
+              },
+              {
+                "@type": "CollegeOrUniversity",
+                "name": "GOVERNMENT TOOL ROOM AND TRAINING CENTRE",
+                "sameAs": "https://gttc.kar.nic.in"
+              }
+            ],
+            "knowsAbout": ["UI/UX Design", "Web Development", "Python", "JavaScript", "React", "MongoDB", "AI Applications"]
+          })}
+        </script>
+
+        {/* FAQ Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What services do you offer?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We provide a wide range of services, including UI/UX design, front-end and back-end development, content creation, digital marketing, work automation, and quality assurance. Additionally, We specialize in media planning, public relations, recruitment, and cold email outreach."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do you provide full-stack web development?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes! We offer full-stack development services using modern technologies like React.js, Next.js, Node.js, Express.js, and MongoDB/PostgreSQL. Whether you need a dynamic website or a scalable web application, We can build a tailored solution."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How can your work automation services benefit my business?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We implement custom automation solutions that streamline repetitive tasks, improve efficiency, and save time. This includes workflow automation, chatbot integration, and AI-driven processes that optimize business operations."
+                }
+              }
+            ]
+          })}
+        </script>
+
+        {/* Breadcrumb Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.mydesignnexus.in"
+              }
+            ]
+          })}
+        </script>
+
+        {/* WebSite Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "url": "https://www.mydesignnexus.in",
+            "name": "My Design Nexus",
+            "description": "Professional portfolio, AI apps, services, blogs & shop",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://www.mydesignnexus.in/search?q={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          })}
+        </script>
+
+        {/* Alternate Languages */}
+        <link rel="alternate" hrefLang="en" href="https://www.mydesignnexus.in" />
+        <link rel="alternate" hrefLang="hi" href="https://www.mydesignnexus.in/hi" />
+        <link rel="alternate" hrefLang="x-default" href="https://www.mydesignnexus.in" />
+
+        {/* Preconnect and DNS Prefetch for Performance */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+
+        {/* Social Media Verification */}
+        <meta name="facebook-domain-verification" content="your-facebook-verification-code" />
+        <meta name="google-site-verification" content="your-google-verification-code" />
+        <meta name="p:domain_verify" content="your-pinterest-verification-code" />
+        <meta name="msvalidate.01" content="your-bing-verification-code" />
+        <meta name="yandex-verification" content="your-yandex-verification-code" />
+
+        {/* Additional SEO Tags */}
+        <meta name="twitter:label1" content="Est. reading time" />
+        <meta name="twitter:data1" content="3 minutes" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="MobileOptimized" content="320" />
+        <meta name="referrer" content="no-referrer-when-downgrade" />
+        <meta name="classification" content="Web Design, UI/UX, Development, Digital Marketing" />
+        <meta name="distribution" content="global" />
+        <meta name="rating" content="general" />
+        <meta name="revisit-after" content="7 days" />
+        <meta name="language" content="English" />
+        <meta name="copyright" content="© 2025 My Design Nexus" />
+        <meta name="web_author" content="Rakshith Gowda" />
       </Head>
 
       {/* hero section */}
@@ -302,6 +545,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+
 
       {/* Projects */}
       <section className="projects">
@@ -427,6 +672,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+
+
 
       {/* My Skills */}
       <section className="myskills">
@@ -620,6 +868,9 @@ export default function Home() {
 
       </section>
 
+
+
+
       {/* Experience study */}
       <section className="exstudy">
         <div className="myskills_title">
@@ -659,6 +910,8 @@ export default function Home() {
             </div>
           </div>
 
+
+
           <div className="education">
 
             <div >
@@ -697,6 +950,13 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+
+
+
+
+
+
 
       {/* Testimonials Section */}
       <section className="testimonials">
@@ -773,6 +1033,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
     </>
   );
 }
